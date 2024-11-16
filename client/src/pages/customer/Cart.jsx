@@ -39,7 +39,7 @@ const Cart = () => {
     if(quantity > 1){
       await axios.put('http://localhost:6001/decrease-cart-quantity', {id}).then(
         (response)=>{
-          fetchCart();j
+          fetchCart();
         }
       ).catch((error)=>{
         // alert("operation failed")
